@@ -1,0 +1,34 @@
+.title {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.count {
+  border-radius: 50%;
+  background: var(--primary-color-black);
+  color: var(--primary-color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 16px;
+  padding: 10px;
+  width: 30px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.phaseContainer {
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 30px;
+  margin-left: 30px;
+}

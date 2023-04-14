@@ -1,0 +1,36 @@
+.checkbox {
+  margin-right: 7px;
+}
+
+.checkbox:disabled {
+  margin-right: 7px;
+}
+
+.description {
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.taskContainer {
+  margin-bottom: 13px;
+}
+
+.btnSm {
+  padding: 0px 10px;
+  background: var(--primary-color-grey);
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.btnSm:disabled,
+.checkbox {
+  cursor: not-allowed;
+}
+
+.disabledLabel {
+  color: var(--primary-color-grey);
+  cursor: not-allowed;
+}

@@ -1,0 +1,9 @@
+.input {
+  padding: 0px 10px;
+  border: 0;
+}
+
+.formContainer {
+  display: inline-flex;
+  border: 1px solid var(--primary-color-grey);
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root {
+  --primary-color: red;
+  --primary-color-black: #000;
+  --primary-color-white: #fff;
+  --primary-color-grey: rgb(217, 217, 217);
+  --color-info: #20259491;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appContent {
+  display: flex;
+  flex-direction: column;
+  border: 20px solid var(--primary-color-grey);
+  padding: 20px;
+  width: 400px;
+}
+
+:global(.btn) {
+  padding: 10px;
+  background: var(--primary-color-grey);
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.appTitle {
+  margin-bottom: 22px;
+  font-size: 29px;
+}

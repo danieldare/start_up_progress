@@ -1,0 +1,11 @@
+.randomText {
+  background-color: var(--color-info);
+  padding: 10px;
+  display: flex;
+  color: var(--primary-color-white);
+  border-radius: 4px;
+}
+
+.randomFactContainer {
+  margin-top: 10px;
+}
