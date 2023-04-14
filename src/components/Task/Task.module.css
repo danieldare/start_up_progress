@@ -26,11 +26,11 @@
 }
 
 .btnSm:disabled,
-.checkbox {
+.checkbox:disabled {
   cursor: not-allowed;
 }
 
 .disabledLabel {
-  color: var(--primary-color-grey);
+  color: var(--primary-color-grey02);
   cursor: not-allowed;
 }
