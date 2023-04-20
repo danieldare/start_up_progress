@@ -11,17 +11,16 @@ type PhaseProps = {
   count: number;
   onAddTask: (phaseId: string, description: string) => void;
   phases: TPhase[];
+  isPhaseDisabled: boolean;
 };
 
-export const Phase = ({ phase, onToggleTask, count, onAddTask, phases }: PhaseProps) => {
+export const Phase = ({ phase, onToggleTask, count, onAddTask, isPhaseDisabled }: PhaseProps) => {
   const [showForm, setShowForm] = useState(false);
 
   const handleAddTask = (description: string) => {
     onAddTask(phase.id, description);
     setShowForm(false);
   };
-
-  const disabled = count > 0 ? !phases[count - 1].completed : false;
 
   return (
     <div className={styles.phaseContainer}>
@@ -33,7 +32,7 @@ export const Phase = ({ phase, onToggleTask, count, onAddTask, phases }: PhasePr
         )}
       </div>
       {phase.tasks.map((task) => (
-        <Task key={task.id} task={task} onToggle={onToggleTask} disabled={disabled} />
+        <Task key={task.id} task={task} onToggle={onToggleTask} disabled={isPhaseDisabled} />
       ))}
       {showForm && <TaskForm onSubmit={handleAddTask} />}
       {!showForm && (
